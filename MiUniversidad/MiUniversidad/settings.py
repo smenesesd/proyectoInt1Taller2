@@ -55,7 +55,7 @@ ROOT_URLCONF = 'MiUniversidad.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['D:/MiUniversidad/Academica/plantillas'],
+        'DIRS': [ BASE_DIR / '/Academica/plantillas'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'MiUniversidad.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'MiUniversidad.db',
+        'NAME': BASE_DIR / 'MiUniversidad.db',
     }
 }
 
